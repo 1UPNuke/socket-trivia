@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <noscript><p style="color: red;">Please enable Javascript!!!</p></noscript>
+    <div id="container">
+        <h1 id="title">Chat Room</h1>
+        <form action="" id="username">
+            <label for="u" id="ulabel">Username:</label>
+            <input id="u" autocomplete="off" />
+            <button id="ubtn">Change Username</button>
+        </form>
+        <div id="message-div"></div>
+        <form action="" id="message">
+            <input id="m" autocomplete="off" /><button id="mbtn">Send</button>
+        </form>
+    </div>
+</body>
+</html>
